@@ -1,0 +1,91 @@
+body{
+    /* background: linear-gradient(90deg, #5d292d 0%, #d1d1d1 100%); */
+    background-color: rgb(80, 36, 36);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope';
+}
+
+
+ul{
+    list-style: none;
+    
+}
+
+.foto{
+    display: inline;
+    
+    border-radius: 15%;
+    width: 200px;
+    height: 270px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+h2{
+    font-size: large;
+}
+
+h3{
+    font-size: medium;
+}
+
+.container{
+    display: inline;
+}
+
+.info{
+    display: inline;
+}
+
+/* .resumo{
+
+}
+
+.destaques{
+
+} */
+
+#destaques {
+	font-family: 'Manrope';
+	border: solid 1px;
+	border-radius: 1px;
+	cursor: pointer;
+	font-size: large;
+	padding: 10px;
+    background: 20px rgb(60, 22, 22);
+    color: #ffffff;
+    height: 70px;
+    width: 80px;
+    justify-content: center;
+    display: inline;
+}
+
+#destaques:hover {
+	background-color: rgb(95, 66, 66);
+	color: #ffffff;
+}
+
+#button{
+    background: transparent;
+    border: white;
+    color: #ffffff;
+    font-family: 'Manrope';
+}
+
+#box1{
+    font-family: 'Manrope';
+	border: solid 1px;
+	border-radius: 1px;
+	cursor: pointer;
+	font-size: small;
+	padding: 10px;
+    background: rgb(60, 22, 22);
+    color: #ffffff;
+    /* height: 70px;
+    width: 80px; */
+    justify-content: center;
+    text-align: center;
+    /* visibility: hidden; */
+    /* display: none; */
+}
