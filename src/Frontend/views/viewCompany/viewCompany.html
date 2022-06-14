@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Empresa</title>
+
+        <link rel="stylesheet" href="../../styles/global.css" />
+        <link rel="stylesheet" href="./viewCompany.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <h3 class="navbarTitle">Brazilians In Tech</h3>
+
+            <div class="navItem">
+                <a href="/views/landingPage/landingPage.html">Logout</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="listTitle">Aprovação</div>
+                <ul class="list">
+                    <li class="listItem active">
+                        <a href="../companyApproval/companyApproval.html">Aprovação de empresas</a>
+                    </li>
+                </ul>
+                <div class="listTitle">Padronizações</div>
+                <ul class="list">
+                    <li class="listItem"><a href="">Competências</a></li>
+                    <li class="listItem"><a href="">Tipos de vaga</a></li>
+                    <li class="listItem"><a href="">Modelos de trabalho</a></li>
+                    <li class="listItem"><a href="">Áreas</a></li>
+                </ul>
+                <div class="listTitle">Visualizar</div>
+                <ul class="list">
+                    <li class="listItem"><a href="">Empresas aprovadas</a></li>
+                    <li class="listItem"><a href="">Usuárias</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="title" id="title"></div>
+                <div class="containerBody">
+                    <div class="left">
+                        <div class="textContainer">
+                            <p class="textTitle">Filosofia</p>
+                            <p class="text" id="companyPhilosophy"></p>
+                        </div>
+                        <div class="textContainer">
+                            <p class="textTitle">Cultura</p>
+                            <p class="text" id="companyCulture"></p>
+                        </div>
+                        <div class="textContainer">
+                            <p class="textTitle">Conquistas da empresa</p>
+                            <p class="text" id="badges"></p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <p class="textTitle">Informações da empresa</p>
+                            <div class="informations">
+                                <p class="informationParagraph">Email: <span id="email"></span></p>
+                                <p class="informationParagraph">CNPJ: <span id="cnpj"></span></p>
+                                <p class="informationParagraph">Data de abertura: <span id="openingDate"></span></p>
+                                <p class="informationParagraph">Telefone: <span id="phone"></span></p>
+
+                                <p class="informationParagraph">Nicho de mercado: <span id="marketNiche"></span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="textTitle">Endereço</p>
+                            <div class="informations">
+                                <p class="informationParagraph">Rua / Avenida: <span id="companyAddress"></span></p>
+                                <p class="informationParagraph">Bairro: <span id="neighborhood"></span></p>
+                                <p class="informationParagraph">Cidade: <span id="city"></span></p>
+                                <p class="informationParagraph">Estado: <span id="state"></span></p>
+                                <p class="informationParagraph">cep: <span id="cep"></span></p>
+                                <p class="informationParagraph">Complement: <span id="complement"></span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="textTitle">Informações do recrutador</p>
+                            <div class="informations">
+                                <p class="informationParagraph">Nome: <span id="recruterName"></span></p>
+                                <p class="informationParagraph">Email: <span id="recruterEmail"></span></p>
+                                <p class="informationParagraph">Cargo: <span id="recruterRole"></span></p>
+                                <p class="informationParagraph">phone: <span id="recruterPhone"></span></p>
+                                <p class="informationParagraph">phone: <span id="recruterLocation"></span></p>
+                              
+                            </div>
+                        </div>
+                        <div class="buttonContainer">
+                            <button class="btn btn-green" id="approveButton">Aprovar</button>
+                            <button class="btn btn-grey" id="deleteCompany">Excluir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="../../global/global.js"></script>
+
+        <script src="./viewCompany.js"></script>
+    </body>
+</html>

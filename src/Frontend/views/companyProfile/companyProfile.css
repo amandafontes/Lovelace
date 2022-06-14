@@ -1,0 +1,102 @@
+.container {
+    position: relative;
+    padding: 6rem 8rem;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 4rem;
+}
+
+.containerBody {
+    display: flex;
+    grid-gap: 8rem;
+}
+
+.left {
+    flex: 0 0 calc(50% - 4rem);
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3rem;
+}
+
+.textContainer {
+}
+
+.textTitle {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.text {
+    font-size: 1.6rem;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+}
+
+.logo {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.btn {
+    padding: 1.2rem 6rem;
+    text-align: center;
+    font-size: 2rem;
+
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 1.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn.like {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.btn.dislike {
+    color: var(--color-white);
+    background-color: red;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.like {
+    width: 25%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.like:hover {
+    transform: scale(1.05);
+}
+
+/* 900 px */
+@media screen and (max-width: 56.25em) {
+    .container {
+        padding: 6rem;
+    }
+    .containerBody {
+        flex-direction: column;
+        grid-gap: 5rem;
+    }
+}

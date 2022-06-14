@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Perfil</title>
+
+        <link rel="stylesheet" href="../../styles/global.css" />
+        <link rel="stylesheet" href="./candidateProfile.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <h3 class="navbarTitle">Brazilians In Tech</h3>
+            <div class="navItem">
+                <a href="/views/jobs/jobs.html">Vagas</a>
+            </div>
+
+            <div class="navItem">
+                <a href="/views/landingPage/landingPage.html">Logout</a>
+            </div>
+        </div>
+        <div class="container">
+            <a onclick="history.back()" class="backBtn"> <img src="../../assets/icons/back.png" alt="Voltar" /></a>
+            <div class="title" id="title"></div>
+            <p class="subTitle" id="age">s</p>
+            <p class="subTitle mb-2" id="location"></p>
+
+            <div class="containerBody">
+                <div class="sectionContainer">
+                    <p class="textTitle">História</p>
+                    <p class="text" id="history"></p>
+                </div>
+                <div class="sectionContainer skillContainer">
+                    <div class="flex-50">
+                        <p class="textTitle">Competências técnicas</p>
+                        <div class="skills">
+                            <div class="badgeContainer" id="hardSkillsContainer"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-50">
+                        <p class="textTitle">Competências interpessoais</p>
+                        <div class="skills">
+                            <div class="badgeContainer" id="softSkillsContainer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <p class="textTitle">Informações de contato</p>
+                    <div class="contactGroup">
+                        <label for="" class="contactLabel">Email:</label>
+                        <span class="contact" id="email"></span>
+                    </div>
+                    <div class="contactGroup">
+                        <label for="" class="contactLabel">Celular:</label>
+                        <span class="contact" id="phone"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./candidateProfile.js"></script>
+    </body>
+</html>

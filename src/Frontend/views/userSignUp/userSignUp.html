@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Cadastro de Usuária</title>
+
+        <link rel="stylesheet" href="../../../styles/global.css" />
+
+        <link rel="stylesheet" href="./userSignUp.css" />
+    </head>
+
+    <body>
+        <div class="pageContainer">
+            <div class="iconsContainer">
+                <div class="iconBox">
+                    <div class="iconImageBox iconImageBox0 active">
+                        <img src="../../../assets/companyRegistration/infoYellow.png" alt="Info" class="icon icon0" />
+                    </div>
+
+                    <p class="iconTitle">Informações</p>
+                </div>
+
+                <div class="iconBox">
+                    <div class="iconImageBox iconImageBox1">
+                        <img src="../../assets/companyRegistration/saveWhite.png" alt="Info" class="icon icon1" />
+                    </div>
+                    <p class="iconTitle">Competências</p>
+                </div>
+
+                <div class="iconBox">
+                    <div class="iconImageBox iconImageBox2">
+                        <img src="../../assets/companyRegistration/uploadWhite.png" alt="Info" class="icon icon2" />
+                    </div>
+                    <p class="iconTitle">Sobre você</p>
+                </div>
+            </div>
+            <div class="boxesContainer stage0">
+                <div class="box">
+                    <a href="../loginPage/loginPage.html?type=user" class="backBtn">
+                        <img src="../../assets/icons/back.png" alt="Voltar"
+                    /></a>
+                    <h4 class="boxTitle">Conta</h4>
+                    <div class="inputContainer">
+                        <form id="accountForm">
+                            <input type="email" class="input" placeholder="E-Mail" name="email" />
+                            <input class="input" placeholder="Senha" name="password" type="password" />
+                        </form>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 class="boxTitle">Informações pessoais</h4>
+                    <div class="inputContainer">
+                        <form id="infoForm">
+                            <input type="text" class="input" placeholder="Primeiro nome" name="firstName" id="firstName"/>
+                            <input type="text" class="input" placeholder="Sobrenome" name="lastName" id="lastName"/>
+                            <input type="text" class="input" placeholder="Naturalidade" name="country" id="country"/>
+                            <input type="text" class="input" placeholder="Telefone" name="phone" id="phone" />
+                            <input type="text" class="input" placeholder="Estado Civil" name="civilState" id="civilState"/>
+                            <input type="text" class="input" placeholder="Data de Nascimento" name="birthDate" id="birthDate" />
+                            <input type="text" class="input" placeholder="CPF" name="cpf" id="cpf" />
+                            <input type="text" class="input" placeholder="RG" name="rg" id="rg"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 class="boxTitle">Endereço</h4>
+
+                    <div class="inputContainer">
+                        <form id="addressForm">
+                            <input type="text" class="input" placeholder="Logradouro" name="street" id="street" />
+                            <input type="text" class="input" placeholder="CEP" name="cep" id="cep" />
+                            <input type="text" class="input" placeholder="Bairro" name="neighborhood" id="neighborhood" />
+                            <input type="text" class="input" placeholder="Cidade" name="city" id="city" />
+                            <input type="text" class="input" placeholder="Estado" name="state" id="state" />
+                            <input type="text" class="input" placeholder="Complemento" name="complement" id="complement"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <button class="btn nextButton">Continuar</button>
+                </div>
+            </div>
+            <div class="boxesContainer stage1">
+                <div class="box">
+                    <h4 class="boxTitle">Competências técnicas</h4>
+                    <p class="skillExplanation">Competências técnicas:</p>
+                    <div class="skillInputContainer">
+                        <select class="skillSelect" id="hardSkills" name="skills[]" multiple>
+                        </select>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 class="boxTitle">Competências interpessoais</h4>
+                    <p class="skillExplanation">Competências interpessoais:</p>
+                    <div class="skillInputContainer">
+                        <select class="skillSelect" id="softSkills" name="skills[]" multiple>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <button class="btn backButton">Voltar</button>
+                    <button class="btn nextButton">Continuar</button>
+                </div>
+            </div>
+            <div class="boxesContainer stage2">
+                <div class="box">
+                    <h4 class="boxTitle">Sobre você</h4>
+                    <div class="aboutYouContainer">
+                        <textarea
+                            placeholder="Descreva em poucas palavras o que você não poderia deixar de contar em uma apresentação sobre você."
+                            name="aboutYou"
+                            id="aboutYou"
+                            cols="30"
+                            rows="10"
+                            class="aboutYou"
+                        ></textarea>
+                    </div>
+                </div>
+                <!-- <div class="box">
+                    <h4 class="boxTitle">Currículo</h4>
+
+                    <div class="uploadContainer">
+                        <input type="file" id="uploadInput" class="uploadInput" />
+                        <label for="uploadInput" class="uploadBox"> Clique aqui para fazer o upload </label>
+                    </div>
+                </div> -->
+                <div class="buttonContainer">
+                    <button class="btn backButton">Voltar</button>
+                    <button class="btn nextButton" id="finalButton">Criar conta</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="../../assets/jqueryMask/jquery.mask.min.js"></script>
+        <script src="./userSignUp.js"></script>
+    </body>
+</html>

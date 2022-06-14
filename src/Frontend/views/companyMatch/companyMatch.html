@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Match de empresas</title>
+        <link rel="stylesheet" href="../../styles/global.css" />
+        <link rel="stylesheet" href="./companyMatch.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <h3 class="navbarTitle">Brazilians In Tech</h3>
+            <div class="navItem active">
+                <a href="/views/companyMatch/companyMatch.html">Empresas</a>
+            </div>
+            <div class="navItem">
+                <a href="/views/userProfile/userProfile.html">Perfil</a>
+            </div>
+            <div class="navItem">
+                <button type="button" id="logoutButton">Logout</button>
+            </div>
+        </div>
+        <div class="pageContainer">
+            <div class="filtersContainer">
+                <div class="filter">
+                    <p class="filterTitle">Tipo de vaga</p>
+
+                    <div class="jobTypesContainer">
+                        <div class="jobTypeBox">
+                            <input type="checkbox" id="integral" class="jobTypeInput" />
+                            <label class="jobTypeLabel" for="integral">Integral</label>
+                        </div>
+                        <div class="jobTypeBox">
+                            <input type="checkbox" id="Meio período" class="jobTypeInput" />
+                            <label class="jobTypeLabel" for="Meio período">Meio período</label>
+                        </div>
+                        <div class="jobTypeBox">
+                            <input type="checkbox" id="Estágio" class="jobTypeInput" />
+                            <label class="jobTypeLabel" for="Estágio">Estágio</label>
+                        </div>
+                        <div class="jobTypeBox">
+                            <input type="checkbox" id="Menor aprendiz" class="jobTypeInput" />
+                            <label class="jobTypeLabel" for="Menor aprendiz">Menor aprendiz</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter">
+                    <p class="filterTitle">Local de trabalho</p>
+                    <select class="workPlaceSelect">
+                        <option class="disabledOption" value="" disabled selected>Selecione um estado...</option>
+                        <option>Belo Horizonte</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <p class="filterTitle">Trabalho remoto</p>
+                    <div class="remoteWorkContainer">
+                        <button class="remoteWorkButton">Sim</button>
+                        <button class="remoteWorkButton">Não</button>
+                        <button class="remoteWorkButton active">Tanto faz</button>
+                    </div>
+                </div>
+            </div>
+            <div class="companiesContainer">
+                <h1 class="title">Empresas</h1>
+                <div class="grid"></div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="../../global/global.js"></script>
+        <script src="./companyMatch.js"></script>
+    </body>
+</html>

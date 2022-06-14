@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Perfil</title>
+
+        <link rel="stylesheet" href="../../styles/global.css" />
+        <link rel="stylesheet" href="./userProfile.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <h3 class="navbarTitle">Brazilians In Tech</h3>
+            <div class="navItem">
+                <a href="/views/companyMatch/companyMatch.html">Empresas</a>
+            </div>
+            <div class="navItem active">
+                <a href="/views/userProfile/userProfile.html">Perfil</a>
+            </div>
+            <div class="navItem">
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+        <div class="container">
+            <a href="../companyMatch/companyMatch.html" class="backBtn">
+                <img src="../../assets/icons/back.png" alt="Voltar"
+            /></a>
+            <div class="title" id="name"></div>
+            <p class="subTitle" id="birthDate"></p>
+            <p class="subTitle mb-2" id="location"></p>
+
+            <div class="containerBody">
+                <div class="sectionContainer">
+                    <p class="textTitle">História</p>
+                    <p class="text" id="history"></p>
+                </div>
+                <div class="sectionContainer skillContainer">
+                    <div class="flex-50">
+                        <p class="textTitle">Competências técnicas</p>
+                        <div class="skills">
+                            <div class="badgeContainer" id="hardSkills"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-50">
+                        <p class="textTitle">Competências interpessoais</p>
+                        <div class="skills">
+                            <div class="badgeContainer" id="softSkills"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <p class="textTitle">Informações</p>
+                    <div class="grid">
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Email: <span></span></label>
+                            <span class="contact" id="email"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Telefone:</label>
+                            <span class="contact" id="phone"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Naturalidade:</label>
+                            <span class="contact" id="country"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Estado Civil:</label>
+                            <span class="contact" id="civilState"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Data de nascimento:</label>
+                            <span class="contact" id="birthDate"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">CPF:</label>
+                            <span class="contact" id="cpf"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">RG:</label>
+                            <span class="contact" id="rg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <p class="textTitle">Endereço</p>
+                    <div class="grid">
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Logradouro:</label>
+                            <span class="contact" id="street"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">CEP:</label>
+                            <span class="contact" id="cep"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Bairro:</label>
+                            <span class="contact" id="neighborhood"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Cidade:</label>
+                            <span class="contact" id="city"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Estado:</label>
+                            <span class="contact" id="state"></span>
+                        </div>
+                        <div class="contactGroup">
+                            <label for="" class="contactLabel">Complemento:</label>
+                            <span class="contact" id="complement"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="editButtonContainer">
+                    <a href="" class="editButton" id="editButton">Editar</a>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="../../global/global.js"></script>
+        <script src="./userProfile.js"></script>
+    </body>
+</html>

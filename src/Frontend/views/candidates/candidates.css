@@ -1,0 +1,108 @@
+.container {
+    margin: 4rem 10rem;
+    position: relative;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    color: var(--color-primary);
+}
+
+.subTitle {
+    font-size: 1.6rem;
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 3rem;
+    padding: 0 8rem;
+}
+
+.gridBox {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+
+    transition: all 0.4s;
+}
+
+.gridBox:hover {
+    transform: scale(1.05);
+}
+
+.boxTitle {
+    font-size: 2rem;
+}
+
+.boxSubTitle {
+    font-size: 1.4rem;
+}
+
+.badgeContainer {
+    display: flex;
+    grid-gap: 1.5rem;
+}
+
+.badge {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius);
+}
+
+.badge-yellow {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.boxText {
+    font-size: 1.4rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 1.4rem 0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.btn-yellow {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* 900 px */
+@media screen and (max-width: 56.25em) {
+    .container {
+        margin: 2rem 6rem;
+    }
+
+    .grid {
+        padding: 0 2rem;
+    }
+}
+
+.noCandidate {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
